@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+	  <PackageReference Include="Scalar.AspNetCore" Version="2.1.6" />
+  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\CafeApp.Shared\CafeApp.Shared.csproj" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(Configuration)' == 'Debug'">
+		<ProjectReference Include="..\Components.Attendance\Components.Attendance.csproj" />
+		<ProjectReference Include="..\Components.Base\Components.Base.csproj" />
+		<ProjectReference Include="..\Components.InventoryManagement\Components.InventoryManagement.csproj" />
+		<ProjectReference Include="..\Components.Menu\Components.Menu.csproj" />
+		<ProjectReference Include="..\Components.Notification\Components.Notification.csproj" />
+	</ItemGroup>
+	<Target Condition="'$(Configuration)' == 'Release'" Name="BuildAndCopyComponents" AfterTargets="Build">
+		<!-- 1. Find all Components.* projects -->
+		<ItemGroup Condition="'$(Configuration)' == 'Release'">
+			<ComponentProjects Include="..\..\Components.*.csproj" />
+		</ItemGroup>
+
+		<!-- 2. Build each project manually -->
+		<MSBuild Condition="'$(Configuration)' == 'Release'" Projects="@(ComponentProjects)" Targets="Build" Properties="Configuration=$(Configuration)" />
+
+		<!-- 3. Copy built DLLs into Modules/ folder -->
+		<ItemGroup Condition="'$(Configuration)' == 'Release'">
+			<ComponentDlls Include="..\Components.*\bin\$(Configuration)\net9.0\Components.*.dll" />
+		</ItemGroup>
+
+		<Copy SourceFiles="@(ComponentDlls)" DestinationFolder="$(OutputPath)Components" SkipUnchangedFiles="true" />
+	</Target>
+  <ItemGroup>
+    <ProjectReference Include="..\RestafeHub.ServiceDefaults\RestafeHub.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+</Project>
