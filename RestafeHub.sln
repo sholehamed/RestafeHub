@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B31BADFD-B90E-4C69-B929-FAD448EB1B78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestafeHub.Api", "RestafeHub.Api\RestafeHub.Api.csproj", "{27785D3C-1909-4869-8194-EC03E0982783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestafeHub.Abstraction", "RestafeHub.Abstraction\RestafeHub.Abstraction.csproj", "{E5958F94-A8AA-478B-B9D0-9FC443F8FA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestafeHub.Modules.Core", "RestafeHub.Modules.Core\RestafeHub.Modules.Core.csproj", "{FE502242-131D-46D3-B57F-5C3E55B0CAE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestafeHub.Modules.Menu", "RestafeHub.Modules.Menu\RestafeHub.Modules.Menu.csproj", "{B963DADD-06EE-4884-8092-4C137675EBD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestafeHub.Infrastructure", "RestafeHub.Infrastructure\RestafeHub.Infrastructure.csproj", "{9CA80C29-D1D9-47B6-B722-FC839C15969E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27785D3C-1909-4869-8194-EC03E0982783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27785D3C-1909-4869-8194-EC03E0982783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27785D3C-1909-4869-8194-EC03E0982783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27785D3C-1909-4869-8194-EC03E0982783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5958F94-A8AA-478B-B9D0-9FC443F8FA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5958F94-A8AA-478B-B9D0-9FC443F8FA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5958F94-A8AA-478B-B9D0-9FC443F8FA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5958F94-A8AA-478B-B9D0-9FC443F8FA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE502242-131D-46D3-B57F-5C3E55B0CAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE502242-131D-46D3-B57F-5C3E55B0CAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE502242-131D-46D3-B57F-5C3E55B0CAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE502242-131D-46D3-B57F-5C3E55B0CAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B963DADD-06EE-4884-8092-4C137675EBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B963DADD-06EE-4884-8092-4C137675EBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B963DADD-06EE-4884-8092-4C137675EBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B963DADD-06EE-4884-8092-4C137675EBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CA80C29-D1D9-47B6-B722-FC839C15969E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CA80C29-D1D9-47B6-B722-FC839C15969E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CA80C29-D1D9-47B6-B722-FC839C15969E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CA80C29-D1D9-47B6-B722-FC839C15969E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27785D3C-1909-4869-8194-EC03E0982783} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E5958F94-A8AA-478B-B9D0-9FC443F8FA53} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FE502242-131D-46D3-B57F-5C3E55B0CAE3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B963DADD-06EE-4884-8092-4C137675EBD6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9CA80C29-D1D9-47B6-B722-FC839C15969E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B0B5745-6FEE-4E31-83A1-FC3E3075B509}
+	EndGlobalSection
+EndGlobal
