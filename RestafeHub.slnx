@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="RestafeHub.ApiServer/RestafeHub.ApiServer.csproj" />
+    <Project Path="RestafeHub.Business.Abstraction/RestafeHub.Business.Abstraction.csproj" Id="ae911675-44a6-48f5-b659-c750b5cdda8b" />
+    <Project Path="RestafeHub.Business/RestafeHub.Business.csproj" Id="7cf53f00-0427-4594-bdb8-d6a0475b81a3" />
+    <Project Path="RestafeHub.Domain/RestafeHub.Domain.csproj" Id="96d56aa7-12a3-4840-b4ff-2c9022586254" />
+    <Project Path="RestafeHub.Infrastructure/RestafeHub.Infrastructure.csproj" Id="b373189b-8306-4df1-9eb8-9411eb977697" />
+    <Project Path="RestafeHub.RestClient/RestafeHub.RestClient.csproj" Id="391356e1-3eec-41e3-ad3c-934bbc4fd4bf" />
+    <Project Path="RestafeHub.Shared.Models/RestafeHub.Shared.Models.csproj" Id="92146962-2ad8-4431-9047-48a1c501a9ff" />
+  </Folder>
+  <Folder Name="/src/Clients/">
+    <Project Path="RestafeHub.Shared.Components/RestafeHub.Shared.Components.csproj" Id="bba5e278-0d20-4d36-96b7-1f4acc999ca7" />
+    <Project Path="RestafeHub.WebClient/RestafeHub.WebClient.csproj" />
+    <Project Path="RestafeHub.WindowsClient/RestafeHub.WindowsClient.csproj" Id="98e27ceb-df5b-4f2a-bfb4-2e9ddff64d83">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/" />
+  <Project Path="RestafeHub.AppHost/RestafeHub.AppHost.csproj" Id="239e8f03-cdd8-49c6-a5b5-9f8f25f9172f" />
+  <Project Path="RestafeHub.ServiceDefaults/RestafeHub.ServiceDefaults.csproj" />
+</Solution>

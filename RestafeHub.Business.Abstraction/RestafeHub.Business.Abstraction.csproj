@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestafeHub.Domain\RestafeHub.Domain.csproj" />
+    <ProjectReference Include="..\RestafeHub.Shared.Models\RestafeHub.Shared.Models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@RestafeHub.ApiServer_HostAddress = http://localhost:5239
+
+GET {{RestafeHub.ApiServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
